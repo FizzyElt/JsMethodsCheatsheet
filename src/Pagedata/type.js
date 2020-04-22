@@ -1,0 +1,6 @@
+export const arr='Array'
+export const obj='Object'
+export const num='Number'
+export const str='String'
+export const bool='boolean'
+export const noReturn='No return'
