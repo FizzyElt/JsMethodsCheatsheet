@@ -13,9 +13,14 @@ const ArrayPage = () => {
         <MethodsTable>
           {arrayList.map(o => (
             <tr key={o.name}>
-              <td><a target="_blank" href={o.mdnLink} className="text-light">{o.name}</a></td>
+              <td>
+                <a target='_blank' href={o.mdnLink} className='text-light'>
+                  {o.name}
+                </a>
+              </td>
+              <td>{o.explanation}</td>
               <td>{o.returnType}</td>
-              <td>{o.isChangeValue?'Yes':'No'}</td>
+              <td>{o.isChangeValue ? 'Yes' : 'No'}</td>
               <td>{o.parameter}</td>
             </tr>
           ))}
