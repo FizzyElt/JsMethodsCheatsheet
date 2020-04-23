@@ -1,7 +1,7 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
 
-const MethodsTable = ({ children }) => {
+const MethodsTable = ({data, children }) => {
   return (
     <Table hover bordered variant="dark">
       <thead>
@@ -14,7 +14,19 @@ const MethodsTable = ({ children }) => {
         </tr>
       </thead>
       <tbody>
-        {children}
+        {data.map(o => (
+          <tr key={o.name}>
+            <td>
+              <a target='_blank' href={o.mdnLink} className='text-light'>
+                {o.name}
+              </a>
+            </td>
+            <td>{o.explanation}</td>
+            <td>{o.returnType}</td>
+            <td>{o.isChangeValue ? 'Yes' : 'No'}</td>
+            <td>{o.parameter}</td>
+          </tr>
+        ))}
       </tbody>
     </Table>
   )
