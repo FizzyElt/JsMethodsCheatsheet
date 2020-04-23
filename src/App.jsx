@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Container className="pt-4 pb-4">
+      <Container className="pt-4 pb-4" fluid="md">
         <Switch>
           <Route exact path='/'>
             <Home />
