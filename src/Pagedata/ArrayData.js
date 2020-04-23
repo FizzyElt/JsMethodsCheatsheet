@@ -1,4 +1,4 @@
-import { arr, num, obj, str, bool, noReturn, any, undef , arrIterator } from './type.js'
+import { arr, num, str, bool, any, undef , arrIterator } from './type.js'
 
 const arrayList = [
   {

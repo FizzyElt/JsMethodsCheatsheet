@@ -17,7 +17,7 @@ const MethodsTable = ({ data, type, changeValue }) => {
     }
     return typeBool && valueBool
   })
-  console.log(filterData)
+
   return (
     <Table hover bordered variant='dark'>
       <thead>
@@ -33,7 +33,7 @@ const MethodsTable = ({ data, type, changeValue }) => {
         {filterData.map(o => (
           <tr key={o.name}>
             <td>
-              <a target='_blank' href={o.mdnLink} className='text-light'>
+              <a target='_blank' rel="noopener noreferrer" href={o.mdnLink} className='text-light'>
                 {o.name}
               </a>
             </td>
