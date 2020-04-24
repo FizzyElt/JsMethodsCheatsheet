@@ -1,3 +1,8 @@
+# JavaScript 方法速查表
+
+用於對JS有基礎知識的人方便查詢方法的參數及功能
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
