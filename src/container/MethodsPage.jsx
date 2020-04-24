@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { Row } from 'react-bootstrap'
-import MethodsTable from '../component/Table/MethodsTable.jsx'
-import TitleBar from '../component/TitleBar/TitleBar.jsx'
 import { getSelectList } from '../utility.js'
 
-const PageContainer = ({ MethodList ,title}) => {
+import MethodsTable from '../component/Table/MethodsTable.jsx'
+import TitleBar from '../component/TitleBar/TitleBar.jsx'
+
+const MethodsPage = ({ MethodList, title }) => {
   const typeList = getSelectList(MethodList)
   const [type, setType] = useState(typeList[0])
   const [changeValue, setChangeValue] = useState('None')
@@ -25,4 +26,4 @@ const PageContainer = ({ MethodList ,title}) => {
   )
 }
 
-export default PageContainer
+export default MethodsPage

@@ -1,11 +1,9 @@
 import React from 'react'
-import PageContainer from '../container/PageContainer'
+import MethodsPage from '../container/MethodsPage.jsx'
 import mathList from '../Pagedata/MathData.js'
 
-
 const MathPage = () => {
-  return(<PageContainer MethodList={mathList} title="Math Methods"/>)
-
+  return <MethodsPage MethodList={mathList} title='Math' />
 }
 
 export default MathPage

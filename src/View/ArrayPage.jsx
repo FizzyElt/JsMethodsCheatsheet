@@ -1,10 +1,9 @@
 import React from 'react'
-import PageContainer from '../container/PageContainer'
+import MethodsPage from '../container/MethodsPage.jsx'
 import arrayList from '../Pagedata/ArrayData.js'
 
-
-const MathPage = () => {
-  return(<PageContainer MethodList={arrayList} title="Array Methods"/>)
+const ArrayPage = () => {
+  return <MethodsPage MethodList={arrayList} title='Array' />
 }
 
-export default MathPage
+export default ArrayPage

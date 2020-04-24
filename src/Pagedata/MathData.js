@@ -106,14 +106,6 @@ const mathList = [
     parameter: 'x',
   },
   {
-    name: 'Math.cosh()',
-    mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Math/cosh',
-    explanation: '返回一個數值的雙曲餘弦函數',
-    returnType: num,
-    isChangeValue: false,
-    parameter: 'x',
-  },
-  {
     name: 'Math.exp()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Math/exp',
     explanation: "返回 e^x，x 表示参數，e 是歐拉常數（Euler's constant），自然對數的底數。",

@@ -1,30 +1,15 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
+import { routes } from '../../routes'
 import './Header.scss'
-
-const routes = [
-  {
-    name: 'Array',
-    url: '/Array',
-  },
-  {
-    name: 'Object',
-    url: '/Object',
-  },
-  {
-    name:'Math',
-    url:'/Math'
-  }
-]
 
 const Header = () => {
   let history = useHistory()
-
-  const connectToHandler = url => {
-    history.push(url)
+  const newroutes = useRef(routes.slice(1))
+  const connectToHandler = path => {
+    history.push(path)
   }
-
   return (
     <Navbar bg='dark' variant='dark'>
       <Navbar.Brand className='link' onClick={() => connectToHandler('/')}>
@@ -32,9 +17,9 @@ const Header = () => {
       </Navbar.Brand>
       <Navbar.Collapse className='justify-content-end'>
         <Nav>
-          {routes.map(({ name, url }) => (
+          {newroutes.current.map(({ name, path }) => (
             <Nav.Item key={name}>
-              <Nav.Link onClick={() => connectToHandler(url)}>{name}</Nav.Link>
+              <Nav.Link onClick={() => connectToHandler(path)}>{name}</Nav.Link>
             </Nav.Item>
           ))}
         </Nav>
