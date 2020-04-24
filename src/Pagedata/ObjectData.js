@@ -1,4 +1,4 @@
-import { arr, bool, obj, any } from './type.js'
+import { arr, bool, obj } from './type.js'
 
 const objectList = [
   {

@@ -12,7 +12,7 @@ const ObjectPage = () => {
   return (
     <>
       <TitleBar
-        title='Array Methods'
+        title='Object Methods'
         type={type}
         typeList={typeList}
         changeValue={changeValue}

@@ -12,6 +12,10 @@ const routes = [
     name: 'Object',
     url: '/Object',
   },
+  {
+    name:'Math',
+    url:'/Math'
+  }
 ]
 
 const Header = () => {

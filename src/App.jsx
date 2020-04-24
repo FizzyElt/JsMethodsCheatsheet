@@ -1,8 +1,9 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import ArrayPage from './container/ArrayPage.jsx'
-import ObjectPage from './container/ObjectPage.jsx'
-import Home from './container/Home.jsx'
+import ArrayPage from './View/ArrayPage.jsx'
+import ObjectPage from './View/ObjectPage.jsx'
+import Home from './View/Home.jsx'
+import MathPage from './View/MathPage.jsx'
 import Header from './component/Header/Header.jsx'
 import { Container } from 'react-bootstrap'
 
@@ -20,6 +21,9 @@ const App = () => {
           </Route>
           <Route path='/Object'>
             <ObjectPage />
+          </Route>
+          <Route path='/Math'>
+            <MathPage />
           </Route>
         </Switch>
       </Container>

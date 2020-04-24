@@ -2,17 +2,16 @@ import React, { useState } from 'react'
 import { Row } from 'react-bootstrap'
 import MethodsTable from '../component/Table/MethodsTable.jsx'
 import TitleBar from '../component/TitleBar/TitleBar.jsx'
-import arrayList from '../Pagedata/ArrayData.js'
 import { getSelectList } from '../utility.js'
 
-const ArrayPage = () => {
-  const typeList = getSelectList(arrayList)
+const PageContainer = ({ MethodList ,title}) => {
+  const typeList = getSelectList(MethodList)
   const [type, setType] = useState(typeList[0])
   const [changeValue, setChangeValue] = useState('None')
   return (
     <>
       <TitleBar
-        title='Array Methods'
+        title={title}
         type={type}
         typeList={typeList}
         changeValue={changeValue}
@@ -20,10 +19,10 @@ const ArrayPage = () => {
         setChangeValue={setChangeValue}
       />
       <Row>
-        <MethodsTable data={arrayList} type={type} changeValue={changeValue}/>
+        <MethodsTable data={MethodList} type={type} changeValue={changeValue} />
       </Row>
     </>
   )
 }
 
-export default ArrayPage
+export default PageContainer

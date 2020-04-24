@@ -6,7 +6,7 @@ const TitleBar = ({ title,typeList, setType, setChangeValue, type, changeValue }
   return (
     <Row className='mb-4'>
       <Col>
-        <h2>{title}</h2>
+        <h2 className="mb-0">{title}</h2>
       </Col>
       <SelectBox typeList={typeList} setType={setType} setChangeValue={setChangeValue} type={type} changeValue={changeValue} />
     </Row>
