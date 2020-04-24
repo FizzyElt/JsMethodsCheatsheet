@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <Navbar bg='dark' variant='dark'>
       <Navbar.Brand className='link' onClick={() => connectToHandler('/')}>
-        JS Methods Table
+        JS Methods Cheatsheet
       </Navbar.Brand>
       <Navbar.Collapse className='justify-content-end'>
         <Nav>
