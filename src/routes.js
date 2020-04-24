@@ -3,6 +3,7 @@ import ArrayPage from './View/ArrayPage.jsx'
 import Home from './View/Home.jsx'
 import MathPage from './View/MathPage.jsx'
 import ObjectPage from './View/ObjectPage.jsx'
+import DatePage from './View/DatePage.jsx'
 
 export const routes = [
   {
@@ -25,4 +26,10 @@ export const routes = [
     path: '/Math',
     View: MathPage,
   },
+  {
+    name: 'Date',
+    path: '/Date',
+    View: DatePage,
+  },
+  
 ]

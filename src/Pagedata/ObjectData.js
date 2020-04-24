@@ -36,7 +36,7 @@ const objectList = [
   {
     name: 'Object.entries()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/entries',
-    explanation: '返回一個给定對象自身可枚舉屬性的键值對數組，其排列與使用 for...in 循環遍歷該對象時返回的順序一致。',
+    explanation: '返回一個给定物件自身可枚舉屬性的键值對數組，其排列與使用 for...in 循環遍歷該物件時返回的順序一致。',
     returnType: arr,
     isChangeValue: false,
     parameter: 'obj',
@@ -44,7 +44,7 @@ const objectList = [
   {
     name: 'Object.fromEntries()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries',
-    explanation: '把键值對列表轉換為一個對象。',
+    explanation: '把键值對列表轉換為一個物件。',
     returnType: obj,
     isChangeValue: false,
     parameter: 'iterable',
@@ -61,7 +61,7 @@ const objectList = [
   {
     name: 'Object.getOwnPropertyDescriptor()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor',
-    explanation: '返回指定對象上一個自有屬性對應的屬性描述符。(自有屬性指的是直接賦予該對象的屬性，不需要從原型練上進行查找的屬性)',
+    explanation: '返回指定物件上一個自有屬性對應的屬性描述符。(自有屬性指的是直接賦予該物件的屬性，不需要從原型練上進行查找的屬性)',
     returnType: obj,
     isChangeValue: false,
     parameter: 'obj, prop',
@@ -69,7 +69,7 @@ const objectList = [
   {
     name: 'Object.getOwnPropertyDescriptors()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors',
-    explanation: '用來獲取一個對象的所有自身屬性的描述符。',
+    explanation: '用來獲取一個物件的所有自身屬性的描述符。',
     returnType: obj,
     isChangeValue: false,
     parameter: 'obj',
@@ -77,7 +77,7 @@ const objectList = [
   {
     name: 'Object.getOwnPropertyNames()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames',
-    explanation: '返回一個由指定對象的所有自身屬性的屬性名（包括不可枚舉屬性但不包括Symbol值作為名稱的屬性）组成的數組。',
+    explanation: '返回一個由指定物件的所有自身屬性的屬性名（包括不可枚舉屬性但不包括Symbol值作為名稱的屬性）组成的數組。',
     returnType: arr,
     isChangeValue: false,
     parameter: 'obj',
@@ -85,7 +85,7 @@ const objectList = [
   {
     name: 'Object.getOwnPropertySymbols()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols',
-    explanation: '返回一個给定對象自身的所有 Symbol 屬性的數組。',
+    explanation: '返回一個给定物件自身的所有 Symbol 屬性的數組。',
     returnType: arr,
     isChangeValue: false,
     parameter: 'obj',
@@ -109,7 +109,7 @@ const objectList = [
   {
     name: 'Object.isExtensible()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/isExtensible',
-    explanation: '判斷一個對象是否可以擴展(是否可以在它上面添加新的屬性)。',
+    explanation: '判斷一個物件是否可以擴展(是否可以在它上面添加新的屬性)。',
     returnType: bool,
     isChangeValue: false,
     parameter: 'obj',
@@ -117,7 +117,7 @@ const objectList = [
   {
     name: 'Object.isForzen()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/isForzen',
-    explanation: '判斷一個對象是否被凍結',
+    explanation: '判斷一個物件是否被凍結',
     returnType: bool,
     isChangeValue: false,
     parameter: 'obj',
@@ -125,7 +125,7 @@ const objectList = [
   {
     name: 'Object.preventExtensions()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions',
-    explanation: '讓一個對象變成不可擴展，也就是永遠不能再添加新的屬性',
+    explanation: '讓一個物件變成不可擴展，也就是永遠不能再添加新的屬性',
     returnType: obj,
     isChangeValue: false,
     parameter: 'obj',
@@ -133,7 +133,7 @@ const objectList = [
   {
     name: 'Object.seal()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/seal',
-    explanation: '封閉一個對象，阻止添加新屬性並將所有現有屬性標記為不可配置。當前屬性的值只要原來是可寫的就可以改變。',
+    explanation: '封閉一個物件，阻止添加新屬性並將所有現有屬性標記為不可配置。當前屬性的值只要原來是可寫的就可以改變。',
     returnType: obj,
     isChangeValue: false,
     parameter: 'obj',
@@ -141,7 +141,7 @@ const objectList = [
   {
     name: 'Object.isSealed()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed',
-    explanation: '判斷一個對象是否被密封',
+    explanation: '判斷一個物件是否被密封',
     returnType: bool,
     isChangeValue: false,
     parameter: 'obj',
@@ -157,7 +157,7 @@ const objectList = [
   {
     name: 'Object.prototype.hasOwnProperty()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty',
-    explanation: '返回一個布林值，指示對象自身屬性中是否具有指定的屬性（也就是，是否有指定的鍵）。',
+    explanation: '返回一個布林值，指示物件自身屬性中是否具有指定的屬性（也就是，是否有指定的鍵）。',
     returnType: bool,
     isChangeValue: false,
     parameter: 'prop',
@@ -165,7 +165,7 @@ const objectList = [
   {
     name: 'Object.prototype.isPrototypeOf()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf',
-    explanation: '用於測試一個對象是否存在於另一個對象的原型鏈上。',
+    explanation: '用於測試一個物件是否存在於另一個物件的原型鏈上。',
     returnType: bool,
     isChangeValue: false,
     parameter: 'object',
