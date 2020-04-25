@@ -4,6 +4,7 @@ import Home from './View/Home.jsx'
 import MathPage from './View/MathPage.jsx'
 import ObjectPage from './View/ObjectPage.jsx'
 import DatePage from './View/DatePage.jsx'
+import StringPage from './View/StringPage.jsx'
 
 export const routes = [
   {
@@ -31,5 +32,9 @@ export const routes = [
     path: '/Date',
     View: DatePage,
   },
-  
+  {
+    name: 'String',
+    path: '/String',
+    View: StringPage,
+  },
 ]
