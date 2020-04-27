@@ -1,4 +1,4 @@
-import { setObject ,undef,bool, arrIterator} from './type.js'
+import { setObject ,undef,bool, iterator} from './type.js'
 
 const setList = [
   {
@@ -29,7 +29,7 @@ const setList = [
     name: 'Set.prototype.entries()',
     mdnLink: 'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Set/entries',
     explanation: '回傳一個 Iterator 物件，其包含著一個由插入順序排序，Set 物件中每個元素的 [value, value] 陣列。儘管對 Set 物件來說沒有像 Map 一樣的 key 概念，為了確保這個 API 運作的與 Map 相似，每個 entry 都有同樣的值同時作為其 key 和 value ，因此回傳的是一個[value, value] 的陣列。',
-    returnType: arrIterator,
+    returnType: iterator,
     isChangeValue: false,
     parameter: '',
   },

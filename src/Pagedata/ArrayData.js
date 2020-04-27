@@ -1,4 +1,4 @@
-import { arr, num, str, bool, any, undef , arrIterator } from './type.js'
+import { arr, num, str, bool, any, undef , iterator } from './type.js'
 
 const arrayList = [
   {
@@ -45,7 +45,7 @@ const arrayList = [
     name:'Array.prototype.entries()',
     mdnLink:'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/entries',
     explanation:'回傳一個包含陣列中每一個索引之鍵值對（key/value pairs）的新陣列迭代器（Array Iterator）物件。',
-    returnType:arrIterator,
+    returnType:iterator,
     isChangeValue:false,
     parameter:'',
   },
@@ -125,7 +125,7 @@ const arrayList = [
     name:'Array.prototype.keys()',
     mdnLink:'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/keys',
     explanation:'回傳一個包含陣列中的每一個索引之鍵（keys）的新 Array Iterator 物件。',
-    returnType:arrIterator,
+    returnType:iterator,
     isChangeValue:false,
     parameter:'',
   },
@@ -246,7 +246,7 @@ const arrayList = [
     name:'Array.prototype.values()',
     mdnLink:'https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/values',
     explanation:'回傳一個包含陣列中的每一個索引之對應值（values）的新 Array Iterator 物件。',
-    returnType:arrIterator,
+    returnType:iterator,
     isChangeValue:false,
     parameter:''
   },

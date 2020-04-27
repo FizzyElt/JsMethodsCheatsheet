@@ -1,4 +1,4 @@
-import { str, num, bool, arr, arrIterator } from './type.js'
+import { str, num, bool, arr, iterator } from './type.js'
 
 const stringList = [
   {
@@ -104,7 +104,7 @@ const stringList = [
     name: 'String.prototype.matchAll()',
     mdnLink: 'https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll',
     explanation: '返回一個包含所有匹配正則表達式的結果及分組捕獲組的迭代器。',
-    returnType: arrIterator,
+    returnType: iterator,
     isChangeValue: false,
     parameter: 'regexp',
   },

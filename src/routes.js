@@ -6,6 +6,7 @@ import ObjectPage from './View/ObjectPage.jsx'
 import DatePage from './View/DatePage.jsx'
 import StringPage from './View/StringPage.jsx'
 import SetPage from './View/SetPage.jsx'
+import MapPage from './View/MapPage.jsx'
 
 export const routes = [
   {
@@ -43,4 +44,10 @@ export const routes = [
     path: '/Set',
     View: SetPage,
   },
+  {
+    name: 'Map',
+    path: '/Map',
+    View: MapPage,
+  },
+  
 ]
