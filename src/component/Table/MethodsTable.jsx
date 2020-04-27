@@ -33,13 +33,13 @@ const MethodsTable = ({ data, type, changeValue }) => {
         {filterData.map(o => (
           <tr key={o.name}>
             <td>
-              <a target='_blank' rel="noopener noreferrer" href={o.mdnLink} className='text-light'>
+              <a target='_blank' rel='noopener noreferrer' href={o.mdnLink} className='text-light'>
                 {o.name}
               </a>
             </td>
             <td>{o.explanation}</td>
-            <td>{o.returnType}</td>
-            <td>{o.isChangeValue ? 'Yes' : 'No'}</td>
+            <td className='text-center'>{o.returnType}</td>
+            <td className='text-center'>{o.isChangeValue ? 'Yes' : 'No'}</td>
             <td>{o.parameter}</td>
           </tr>
         ))}
