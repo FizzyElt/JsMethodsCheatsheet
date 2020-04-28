@@ -54,6 +54,5 @@ export const routes = [
     name: 'Number',
     path: '/Number',
     View: NumberPage,
-  },
-  
+  }
 ]

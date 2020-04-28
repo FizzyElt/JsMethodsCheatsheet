@@ -13,8 +13,8 @@ const App = () => {
         {routes.map(({ path, View }) => (
           <Route key={path} exact path={path}>
             {({ match }) => (
-              <CSSTransition in={match !== null} timeout={400} classNames='page-fade' unmountOnExit>
-                <Container className="page">
+              <CSSTransition in={match !== null} timeout={700} classNames='page-fade' unmountOnExit>
+                <Container className='page'>
                   <View />
                 </Container>
               </CSSTransition>

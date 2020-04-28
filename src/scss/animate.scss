@@ -16,11 +16,12 @@
 .page-fade-exit {
     opacity: 1;
     transform: translateX(0px);
-    transition: opacity 400ms, transform 400ms;
+    transition: opacity 600ms, transform 600ms;
+    
 }
 
 .page-fade-exit-active {
     opacity: 0;
-    transform: translateX(80px);
+    transform: translateX(-80px);
     
 }
