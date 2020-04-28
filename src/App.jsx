@@ -1,6 +1,5 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
-import Home from './View/Home.jsx'
+import { Route } from 'react-router-dom'
 import Header from './component/Header/Header.jsx'
 import { routes } from './routes.js'
 import { CSSTransition } from 'react-transition-group'

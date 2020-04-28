@@ -7,6 +7,7 @@ import DatePage from './View/DatePage.jsx'
 import StringPage from './View/StringPage.jsx'
 import SetPage from './View/SetPage.jsx'
 import MapPage from './View/MapPage.jsx'
+import NumberPage from './View/NumberPage.jsx'
 
 export const routes = [
   {
@@ -48,6 +49,11 @@ export const routes = [
     name: 'Map',
     path: '/Map',
     View: MapPage,
+  },
+  {
+    name: 'Number',
+    path: '/Number',
+    View: NumberPage,
   },
   
 ]
