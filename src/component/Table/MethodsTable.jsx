@@ -1,10 +1,11 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
 
-const MethodsTable = ({ data, type, changeValue }) => {
-  const filterData = data.filter(o => {
+const MethodsTable = ({ data, type, changeValue, search }) => {
+  let filterData = data.filter(o => {
     let typeBool = true
     let valueBool = true
+    let nameBool = true
     if (changeValue !== 'None') {
       if (changeValue === 'Yes') {
         valueBool = o.isChangeValue === true
@@ -15,7 +16,10 @@ const MethodsTable = ({ data, type, changeValue }) => {
     if (type !== 'None') {
       typeBool = type === o.returnType
     }
-    return typeBool && valueBool
+    if (search !== '') {
+      nameBool = o.name.toLowerCase().includes(search.toLowerCase())
+    }
+    return typeBool && valueBool && nameBool
   })
 
   return (

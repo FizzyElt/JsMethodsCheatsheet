@@ -9,6 +9,7 @@ const MethodsPage = ({ MethodList, title }) => {
   const typeList = getSelectList(MethodList)
   const [type, setType] = useState(typeList[0])
   const [changeValue, setChangeValue] = useState('None')
+  const [search,setSearch]=useState("")
   return (
     <>
       <TitleBar
@@ -18,9 +19,11 @@ const MethodsPage = ({ MethodList, title }) => {
         changeValue={changeValue}
         setType={setType}
         setChangeValue={setChangeValue}
+        search={search}
+        setSearch={setSearch}
       />
       <Row>
-        <MethodsTable data={MethodList} type={type} changeValue={changeValue} />
+        <MethodsTable data={MethodList} type={type} changeValue={changeValue} search={search}/>
       </Row>
     </>
   )
