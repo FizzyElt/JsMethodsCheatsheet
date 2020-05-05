@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
 
 const Home = () => {
   return (
@@ -18,7 +18,9 @@ const Home = () => {
         </h4>
         <h2>Github連結</h2>
         <h4 className='mb-5'>
-        <a href="https://github.com/FizzyElt/JsMethodsCheatsheet" target="_blank">https://github.com/FizzyElt/JsMethodsCheatsheet</a>
+          <a href='https://github.com/FizzyElt/JsMethodsCheatsheet' target='_blank' rel="noopener noreferrer">
+            https://github.com/FizzyElt/JsMethodsCheatsheet
+          </a>
           <br />
           有錯誤或想法歡迎發PR給我
         </h4>

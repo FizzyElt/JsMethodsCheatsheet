@@ -21,21 +21,20 @@ const MethodsTable = ({ data, type, changeValue, search }) => {
     }
     return typeBool && valueBool && nameBool
   })
-
   return (
-    <Table hover bordered variant='dark'>
+    <Table bordered hover variant='dark'>
       <thead>
         <tr>
           <th style={{ width: '20%' }}>方法名稱</th>
           <th style={{ width: '30%' }}>方法說明</th>
-          <th>回傳型別</th>
-          <th>是否更動原始值</th>
+          <th style={{ width: '8%' }}>回傳型別</th>
+          <th style={{ width: '8%' }}>是否更動原始值</th>
           <th>參數</th>
         </tr>
       </thead>
       <tbody>
         {filterData.map(o => (
-          <tr key={o.name}>
+          <tr>
             <td>
               <a target='_blank' rel='noopener noreferrer' href={o.mdnLink} className='text-light'>
                 {o.name}
