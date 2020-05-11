@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Row, Col, DropdownButton, Dropdown } from 'react-bootstrap'
 
 const changeValueList = ['None', 'Yes', 'No']
@@ -44,6 +45,16 @@ const SelectBox = ({ typeList = ['None'], type, setType, changeValue, setChangeV
       </Row>
     </Col>
   )
+}
+
+SelectBox.propTypes = {
+  typeList: PropTypes.array,
+  type: PropTypes.string,
+  setType: PropTypes.func,
+  changeValue: PropTypes.string,
+  setChangeValue: PropTypes.func,
+  search: PropTypes.string,
+  setSearch: PropTypes.func,
 }
 
 export default SelectBox

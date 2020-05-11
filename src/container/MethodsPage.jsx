@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import { Row } from 'react-bootstrap'
 import { getSelectList } from '../utility.js'
 
@@ -27,6 +28,11 @@ const MethodsPage = ({ MethodList, title }) => {
       </Row>
     </>
   )
+}
+
+MethodsPage.propTypes={
+  MethodList:PropTypes.array,
+  title:PropTypes.string
 }
 
 export default MethodsPage

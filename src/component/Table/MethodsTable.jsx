@@ -1,5 +1,7 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
+import { CSSTransition } from 'react-transition-group'
+import { useTransition, animated } from 'react-spring'
 
 const MethodsTable = ({ data, type, changeValue, search }) => {
   let filterData = data.filter(o => {
@@ -21,8 +23,9 @@ const MethodsTable = ({ data, type, changeValue, search }) => {
     }
     return typeBool && valueBool && nameBool
   })
+
   return (
-    <Table bordered hover variant='dark'>
+    <Table bordered variant="dark" hover>
       <thead>
         <tr>
           <th style={{ width: '20%' }}>方法名稱</th>
@@ -33,18 +36,18 @@ const MethodsTable = ({ data, type, changeValue, search }) => {
         </tr>
       </thead>
       <tbody>
-        {filterData.map(o => (
+        {filterData.map( item => (
           <tr>
             <td>
-              <a target='_blank' rel='noopener noreferrer' href={o.mdnLink} className='text-light'>
-                {o.name}
+              <a target='_blank' rel='noopener noreferrer' href={item.mdnLink} className='text-light'>
+                {item.name}
               </a>
             </td>
-            <td>{o.explanation}</td>
-            <td className='text-center'>{o.returnType}</td>
-            <td className='text-center'>{o.isChangeValue ? 'Yes' : 'No'}</td>
-            <td>{o.parameter}</td>
-          </tr>
+            <td>{item.explanation}</td>
+            <td className='text-center'>{item.returnType}</td>
+            <td className='text-center'>{item.isChangeValue ? 'Yes' : 'No'}</td>
+            <td>{item.parameter}</td>
+            </tr>
         ))}
       </tbody>
     </Table>
