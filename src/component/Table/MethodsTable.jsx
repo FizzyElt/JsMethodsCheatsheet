@@ -1,7 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Table } from 'react-bootstrap'
-import { CSSTransition } from 'react-transition-group'
-import { useTransition, animated } from 'react-spring'
 
 const MethodsTable = ({ data, type, changeValue, search }) => {
   let filterData = data.filter(o => {
@@ -25,7 +24,7 @@ const MethodsTable = ({ data, type, changeValue, search }) => {
   })
 
   return (
-    <Table bordered variant="dark" hover>
+    <Table bordered variant='dark' hover>
       <thead>
         <tr>
           <th style={{ width: '20%' }}>方法名稱</th>
@@ -36,8 +35,8 @@ const MethodsTable = ({ data, type, changeValue, search }) => {
         </tr>
       </thead>
       <tbody>
-        {filterData.map( item => (
-          <tr>
+        {filterData.map(item => (
+          <tr key={item.name}>
             <td>
               <a target='_blank' rel='noopener noreferrer' href={item.mdnLink} className='text-light'>
                 {item.name}
@@ -47,11 +46,18 @@ const MethodsTable = ({ data, type, changeValue, search }) => {
             <td className='text-center'>{item.returnType}</td>
             <td className='text-center'>{item.isChangeValue ? 'Yes' : 'No'}</td>
             <td>{item.parameter}</td>
-            </tr>
+          </tr>
         ))}
       </tbody>
     </Table>
   )
+}
+
+MethodsTable.propTypes = {
+  data: PropTypes.array.isRequired,
+  type: PropTypes.string.isRequired,
+  changeValue: PropTypes.string.isRequired,
+  search: PropTypes.string.isRequired,
 }
 
 export default MethodsTable

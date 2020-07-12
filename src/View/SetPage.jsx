@@ -1,6 +1,6 @@
 import React from 'react'
 import MethodsPage from '../container/MethodsPage.jsx'
-import setList from '../Pagedata/SetData.js'
+import setList from '../PageData/SetData.js'
 const SetPage = () => {
   return <MethodsPage MethodList={setList} title='Set' />
 }
